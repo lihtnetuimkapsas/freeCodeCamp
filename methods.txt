@@ -1,2 +1,0 @@
-appendChild() lets you add a node or an element as the child of another element. 
-
