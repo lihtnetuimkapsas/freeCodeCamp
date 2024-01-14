@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Küsimustik</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Küsimustik</h1>
+    <p id ="description">Aitäh, et leiad aega täitmaks minu küsimustikku!</p>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label">
+      <input placeholder="Sinu nimi" id="name" type="text" required> Nimi</label>
+      </fieldset>
+      <fieldset>
+      <label id="email-label">
+      <input placeholder="näide@näide.ee" id="email" type="email" required>Email</label>
+</fieldset>
+<fieldset>
+  <label id="number-label">
+    <input placeholder="18" id="number" type="number" min="18" max="120">Vanus
+      </label>
+      </fieldset>
+      <fieldset>
+      <label>Mis käib sinu kohta?</h3>
+      <select id="dropdown">
+        <option>vali</option>
+        <option>Õpilane</option>
+        <option>Töötan</option>
+        <option>Töötu</option>
+      </select>
+      </fieldset>
+      <fieldset>
+      <label for="jah">Kas sa soovitaksid midagi teha?</label>
+      <input id="jah" type="radio" name="nupp" value="radio">Jah</input>
+      
+      <input id="ei" type="radio" name="nupp" value="radio">Ei</input>
+      </fieldset>
+      <fieldset>
+       <label>Mida sulle teha meeldib?</label>
+      <select id="dropdown">
+        <option>vali</option>
+        <option>Midagi</option>
+        <option>Mitte midagi</option>
+      </select>
+      </fieldset>
+      <fieldset>
+       <label>Vali mida sooviksid parandada?</label>
+        <input type="checkbox" value="checkbox">Midagi</input>
+        <input type="checkbox" value="checkbox">Mitte midagi</input>
+        <input type="checkbox" value="checkbox">Kedagi</input>
+        <input type="checkbox" value="checkbox"> Mitte kedagi</input>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="kommentaar">Kommentaare või soovitusi</label>
+      <textarea id="kommentaar" placeholder="Kirjuta siia"></textarea>
+      </label>
+      </fieldset>
+      <fieldset>
+      <label>
+      <input id="submit" type="submit" value="Submit">
+      </label>
+      </fieldset>
+    </form>
+  </body>
+  
