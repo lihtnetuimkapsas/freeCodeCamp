@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palindrome Checker Project</title>
-</head>
-<body>
-    <div class="container">
-        <div class="title">
-            <h1>Is it a palindrome?</h1></div>
-        <div class="input-box">
-            <h3>Enter in text to check for a Palindrome:</h3>
-            <input type="text" id="text-input">
-            <button id="check-btn">Check</button>
-            <div id="result"></div>
-        </div>
-        <div class="meaning-box">
-            <p><span role="img" aria-label="light-bulb">💡</span>
-                A palindromeis a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p>
-        </div>
-    </div>
-    <script src="scripts.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome Checker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">Is it a Palindrome?</h1>
+      <div class="palindrome-div">
+        <label for="text-input"
+          >Enter in text to check for a palindrome:
+        </label>
+        <input class="palindrome-input" id="text-input" value="" type="text" />
+        <button class="palindrome-btn" id="check-btn">Check</button>
+        <div class="results-div hidden" id="result"></div>
+      </div>
+      <div class="palindrome-definition-div">
+        <p class="palindrome-definition">
+          <span role="img" aria-label="light-bulb">&#128161;</span>
+          A palindrome is a word or sentence that's spelled the same
+          way both forward and backward, ignoring punctuation, case, and
+          spacing.
+        </p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
