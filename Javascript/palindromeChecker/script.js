@@ -1,24 +1,18 @@
-const userInput = document.getElementById('text-input');
-const checkPalindromeBtn = document.getElementById('check-btn');
-const resultDiv = document.getElementById('result');
+function isPalindrome(str) {
+  const cleanedStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+  return cleanedStr === cleanedStr.split('').reverse().join('');
+}
 
-const checkForPalindrome = input => {
-  const originalInput = input;
+function checkPalindrome() {
+  const inputElement = document.getElementById('text-input');
+  const resultElement = document.getElementById('result');
 
-  if (input === '') {
-    alert('Please input a value');
+  const inputValue = inputElement.value.trim();
+
+  if (inputValue === '') {
+    alert('Please input a value.');
     return;
   }
-};
 
-checkPalindromeBtn.addEventListener('click', () => {
-  checkForPalindrome(userInput.value);
-  userInput.value = '';
-});
-
-
-if (inputText === 'a') {
-  document.getElementById('result').innerText = inputText + ' is a palindrome.';
-} else {
-  document.getElementById('result').innerText = inputText + ' is not the letter A.';
+  const isPalindromic = isPalindrome(inputValue);
 }

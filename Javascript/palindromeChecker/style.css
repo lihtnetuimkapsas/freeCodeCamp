@@ -1,89 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway&family=Rubik+Doodle+Shadow&family=Urbanist&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Raleway";
-    background-color: #f2f7fb;
-  }
-  
-  .container {
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
+body {
+  font-family: 'Montserrat';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
 
- .title {
-    margin-top: 50px;
-    text-align: center;
-    padding: 10px 0;
-    margin-bottom: 100px;
-  }
-  
-  .palindrome-div {
-    width: 450px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin: 10px 0;
-    background-color: white;
-    box-shadow: 0 6px 6px #b9cfe8;
-  }
-  
-  label {
-    color: #0a0a23;
-    margin-bottom: 20px;
-  }
-  
-  .palindrome-btn {
-    width: 90px;
-    border: none;
-    padding: 10px;
-    border-radius: 15px;
-    background-color: #6a7fc1;
-    cursor: pointer;
-  }
-  
-  .palindrome-input {
-    height: 30px;
-    width: 250px;
-    text-align: center;
-    margin: 10px;
-    border: none;
-    border-bottom: 2px solid #414e6e;
-  }
-  
-  .user-input {
-    margin-top: 10px;
-    text-align: center;
-  }
-  
-  .results-div {
-    min-height: 50px;
-    color: black;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  .palindrome-definition-div {
-    width: 450px;
-    background-color: #6a7fc1;
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.container {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition:  0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #333;
+}
